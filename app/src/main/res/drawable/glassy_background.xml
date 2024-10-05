@@ -1,0 +1,15 @@
+<!-- res/drawable/glassy_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#80FFFFFF" /> <!-- Semi-transparent white -->
+            <corners android:radius="16dp" /> <!-- Rounded corners -->
+        </shape>
+    </item>
+    <item android:right="2dp" android:left="2dp" android:top="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#40FFFFFF" /> <!-- More transparent white for shadow effect -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</layer-list>

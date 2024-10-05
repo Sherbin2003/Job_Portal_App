@@ -1,0 +1,74 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.finale">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_logo"
+        android:label="JobPortal"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Finale"
+        tools:targetApi="31">
+
+        <!-- Define all your activities here -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".JobDetailsActivity"
+            android:theme="@style/Theme.Finale"
+            android:exported="false" />
+
+        <activity
+            android:name=".JobListActivity"
+            android:theme="@style/Theme.Finale"
+            android:exported="false" />
+
+        <activity
+            android:name=".SearchJob"
+            android:theme="@style/Theme.Finale"
+            android:exported="false" />
+
+        <activity
+            android:name=".PostJobActivity"
+            android:theme="@style/Theme.Finale"
+            android:exported="false" />
+
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/Theme.Finale"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegistrationActivity"
+            android:theme="@style/Theme.Finale"
+            android:exported="false" />
+
+        <!-- Add PostedJobsActivity here -->
+        <activity
+            android:name=".PostedJobsActivity"
+            android:theme="@style/Theme.Finale"
+            android:exported="false" />
+        <activity android:name=".mapping"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBH44OuVwXajJ7XKVubf4QcaHXAXt7TIpY" />
+    </application>
+
+
+</manifest>

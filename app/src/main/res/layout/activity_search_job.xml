@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/job1"
+    android:padding="16dp">
+
+    <!-- Search Job Title EditText -->
+    <EditText
+        android:id="@+id/editTextSearchJobTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by Job Title"
+        android:layout_marginTop="16dp" />
+
+    <!-- Search Job Location EditText -->
+    <EditText
+        android:id="@+id/editTextSearchJobLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by Job Location"
+        android:layout_below="@id/editTextSearchJobTitle"
+        android:layout_marginTop="16dp" />
+
+    <!-- Search Company EditText -->
+    <EditText
+        android:id="@+id/editTextSearchCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by Company"
+        android:layout_below="@id/editTextSearchJobLocation"
+        android:layout_marginTop="16dp" />
+
+    <!-- Search Degree EditText -->
+    <EditText
+        android:id="@+id/editTextSearchDegree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by Degree"
+        android:layout_below="@id/editTextSearchCompany"
+        android:layout_marginTop="16dp" />
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="#FFFFFF"
+        android:background="#FF4081"
+        android:layout_below="@id/editTextSearchDegree"
+        android:layout_marginTop="32dp" />
+
+</RelativeLayout>

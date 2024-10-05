@@ -1,0 +1,70 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/job1"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextJobTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Job Title"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editTextJobDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Job Description"
+            android:layout_below="@id/editTextJobTitle"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editTextCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Company Name"
+            android:layout_below="@id/editTextJobDescription"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editTextJobLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Job Location"
+            android:layout_below="@id/editTextCompanyName"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editTextDegree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Degree Required"
+            android:layout_below="@id/editTextJobLocation"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/editTextDegree"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/buttonPostJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post Job"
+            android:textColor="#FFFFFF"
+            android:background="#FF4081"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="32dp" />
+
+    </RelativeLayout>
+</ScrollView>
